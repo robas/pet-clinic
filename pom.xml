@@ -25,6 +25,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <start-class>br.com.robas.petclinic.PetClinicApplication</start-class>
     </properties>
 
     <build>
@@ -32,8 +33,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
             </plugin>
         </plugins>
     </build>
+
 
 </project>
